@@ -1,28 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<script src="/1UnitateAriketak/Trivial pursuit/trivial.js"></script>
-<script src= 
-"https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"> 
-    </script> 
-<script>
-    t =0;
-    o=0;
-    $(document).ready(function(){    
-        $("#EraG").click(function(){
-            const era = $("#GeoEra").val().toUpperCase();
+$(document).ready(function() {
+    let t = 0;
+    let o = 0;
+    
+    $("#EraG").click(function() {
+        const era = $("#GeoEra").val().toUpperCase();
         if (era === "PARIS") {
             o = o + 1;
-            $("#GeoPre").hide()
+            $("#GeoPre").hide();
             $("#GP").prop("disabled", true);
         } else {
             t = t + 1;
         }
-            if(t>2){
+        if (t > 2) {
             $("#GP").prop("disabled", true);
             $("#AP").prop("disabled", true);
             $("#IP").prop("disabled", true);
@@ -30,7 +19,7 @@
             $("#ZP").prop("disabled", true);
             $("#KP").prop("disabled", true);
             window.alert("Galdu egin duzu");
-            } else if(o>=4){
+        } else if (o >= 4) {
             $("#GP").prop("disabled", true);
             $("#AP").prop("disabled", true);
             $("#IP").prop("disabled", true);
@@ -38,18 +27,19 @@
             $("#ZP").prop("disabled", true);
             $("#KP").prop("disabled", true);
             window.alert("Irabazi egin duzu");
-            }
-        });
-        $("#EraA").click(function(){
-            const era = $("#ArtEra").val().toUpperCase();
+        }
+    });
+
+    $("#EraA").click(function() {
+        const era = $("#ArtEra").val().toUpperCase();
         if (era === "LEONARDO DA VINCI") {
             o = o + 1;
-            $("#ArtPre").hide()
+            $("#ArtPre").hide();
             $("#AP").prop("disabled", true);
         } else {
             t = t + 1;
         }
-            if(t>2){
+        if (t > 2) {
             $("#GP").prop("disabled", true);
             $("#AP").prop("disabled", true);
             $("#IP").prop("disabled", true);
@@ -57,7 +47,7 @@
             $("#ZP").prop("disabled", true);
             $("#KP").prop("disabled", true);
             window.alert("Galdu egin duzu");
-            }else if(o>=4){
+        } else if (o >= 4) {
             $("#GP").prop("disabled", true);
             $("#AP").prop("disabled", true);
             $("#IP").prop("disabled", true);
@@ -65,18 +55,19 @@
             $("#ZP").prop("disabled", true);
             $("#KP").prop("disabled", true);
             window.alert("Irabazi egin duzu");
-            }
-        });
-        $("#EraI").click(function(){
-            const era = $("#IkuEra").val().toUpperCase();
+        }
+    });
+
+    $("#EraI").click(function() {
+        const era = $("#IkuEra").val().toUpperCase();
         if (era === "HORIA") {
             o = o + 1;
-            $("#IkuPre").hide()
+            $("#IkuPre").hide();
             $("#IP").prop("disabled", true);
         } else {
             t = t + 1;
         }
-            if(t>2){
+        if (t > 2) {
             $("#GP").prop("disabled", true);
             $("#AP").prop("disabled", true);
             $("#IP").prop("disabled", true);
@@ -84,7 +75,7 @@
             $("#ZP").prop("disabled", true);
             $("#KP").prop("disabled", true);
             window.alert("Galdu egin duzu");
-            }else if(o>=4){
+        } else if (o >= 4) {
             $("#GP").prop("disabled", true);
             $("#AP").prop("disabled", true);
             $("#IP").prop("disabled", true);
@@ -92,18 +83,19 @@
             $("#ZP").prop("disabled", true);
             $("#KP").prop("disabled", true);
             window.alert("Irabazi egin duzu");
-            }
-        });
-        $("#EraH").click(function(){
-            const era = $("#HisEra").val().toUpperCase();
+        }
+    });
+
+    $("#EraH").click(function() {
+        const era = $("#HisEra").val().toUpperCase();
         if (era === "FRANTZIA") {
             o = o + 1;
-            $("#HisPre").hide()
+            $("#HisPre").hide();
             $("#HP").prop("disabled", true);
         } else {
             t = t + 1;
         }
-            if(t>2){
+        if (t > 2) {
             $("#GP").prop("disabled", true);
             $("#AP").prop("disabled", true);
             $("#IP").prop("disabled", true);
@@ -111,7 +103,7 @@
             $("#ZP").prop("disabled", true);
             $("#KP").prop("disabled", true);
             window.alert("Galdu egin duzu");
-            }else if(o>=4){
+        } else if (o >= 4) {
             $("#GP").prop("disabled", true);
             $("#AP").prop("disabled", true);
             $("#IP").prop("disabled", true);
@@ -119,18 +111,19 @@
             $("#ZP").prop("disabled", true);
             $("#KP").prop("disabled", true);
             window.alert("Irabazi egin duzu");
-            }
-        });
-        $("#EraZ").click(function(){
-            const era = $("#ZieEra").val().toUpperCase();
+        }
+    });
+
+    $("#EraZ").click(function() {
+        const era = $("#ZieEra").val().toUpperCase();
         if (era === "URA") {
             o = o + 1;
-            $("#ZiePre").hide()
+            $("#ZiePre").hide();
             $("#ZP").prop("disabled", true);
         } else {
             t = t + 1;
         }
-            if(t>2){
+        if (t > 2) {
             $("#GP").prop("disabled", true);
             $("#AP").prop("disabled", true);
             $("#IP").prop("disabled", true);
@@ -138,7 +131,7 @@
             $("#ZP").prop("disabled", true);
             $("#KP").prop("disabled", true);
             window.alert("Galdu egin duzu");
-            }else if(o>=4){
+        } else if (o >= 4) {
             $("#GP").prop("disabled", true);
             $("#AP").prop("disabled", true);
             $("#IP").prop("disabled", true);
@@ -146,18 +139,19 @@
             $("#ZP").prop("disabled", true);
             $("#KP").prop("disabled", true);
             window.alert("Irabazi egin duzu");
-            }
-        });
-        $("#EraK").click(function(){
-            const era = $("#KirEra").val().toUpperCase();
+        }
+    });
+
+    $("#EraK").click(function() {
+        const era = $("#KirEra").val().toUpperCase();
         if (era === "FUTBOLA") {
             o = o + 1;
-            $("#KirPre").hide()
+            $("#KirPre").hide();
             $("#KP").prop("disabled", true);
         } else {
             t = t + 1;
         }
-            if(t>2){
+        if (t > 2) {
             $("#GP").prop("disabled", true);
             $("#AP").prop("disabled", true);
             $("#IP").prop("disabled", true);
@@ -165,7 +159,7 @@
             $("#ZP").prop("disabled", true);
             $("#KP").prop("disabled", true);
             window.alert("Galdu egin duzu");
-            }else if(o>3){
+        } else if (o >= 4) {
             $("#GP").prop("disabled", true);
             $("#AP").prop("disabled", true);
             $("#IP").prop("disabled", true);
@@ -173,165 +167,84 @@
             $("#ZP").prop("disabled", true);
             $("#KP").prop("disabled", true);
             window.alert("Irabazi egin duzu");
-            }
-        });
-
-    });
-    $(document).ready(function(){
-        if(boolG = true){
-
         }
-
     });
-    $(document).ready(function(){
-        $("#GeoPre").hide()
-        var g = "off"; 
 
-        $("#GP").click(function(){
+    $("#GeoPre").hide();
+    let g = "off"; 
 
-        if (g === "off")
-        {
+    $("#GP").click(function() {
+        if (g === "off") {
             $('#GeoPre').show();
             g = "on";
-        }
-        else
-        {
+        } else {
             $('#GeoPre').hide();
-            g = "off";  
+            g = "off";
         }       
     });
-});
-    $(document).ready(function(){
-        $("#ArtPre").hide()
-        var a = "off"; 
 
-        $("#AP").click(function(){
+    $("#ArtPre").hide();
+    let a = "off"; 
 
-        if (a === "off")
-        {
+    $("#AP").click(function() {
+        if (a === "off") {
             $('#ArtPre').show();
             a = "on";
-        }
-        else
-        {
+        } else {
             $('#ArtPre').hide();
             a = "off";  
         }       
     });
-});
-    $(document).ready(function(){
-        $("#IkuPre").hide()
-        var t = "off"; 
 
-        $("#IP").click(function(){
+    $("#IkuPre").hide();
+    let i = "off"; 
 
-        if (t === "off")
-        {
+    $("#IP").click(function() {
+        if (i === "off") {
             $('#IkuPre').show();
-            t = "on";
-        }
-        else
-        {
+            i = "on";
+        } else {
             $('#IkuPre').hide();
-            t = "off";  
+            i = "off";  
         }       
     });
-});
-    $(document).ready(function(){
-        $("#HisPre").hide()
-        var t = "off"; 
 
-        $("#HP").click(function(){
+    $("#HisPre").hide();
+    let h = "off"; 
 
-        if (t === "off")
-        {
+    $("#HP").click(function() {
+        if (h === "off") {
             $('#HisPre').show();
-            t = "on";
-        }
-        else
-        {
+            h = "on";
+        } else {
             $('#HisPre').hide();
-            t = "off";  
+            h = "off";  
         }       
     });
-});
-    $(document).ready(function(){
-        $("#ZiePre").hide()
-        var t = "off"; 
 
-        $("#ZP").click(function(){
+    $("#ZiePre").hide();
+    let z = "off"; 
 
-        if (t === "off")
-        {
+    $("#ZP").click(function() {
+        if (z === "off") {
             $('#ZiePre').show();
-            t = "on";
-        }
-        else
-        {
+            z = "on";
+        } else {
             $('#ZiePre').hide();
-            t = "off";  
+            z = "off";  
         }       
     });
-});
-    $(document).ready(function(){
-        $("#KirPre").hide()
-        var t = "off"; 
 
-        $("#KP").click(function(){
+    $("#KirPre").hide();
+    let k = "off"; 
 
-        if (t === "off")
-        {
+    $("#KP").click(function() {
+        if (k === "off") {
             $('#KirPre').show();
-            t = "on";
-        }
-        else
-        {
+            k = "on";
+        } else {
             $('#KirPre').hide();
-            t = "off";  
+            k = "off";  
         }       
     });
 });
-    $(document).ready(function(){
-
-    })
-</script>
-<body>
-    <button id="GP" type="button" onclick="openCity(event, 'GeoPre')">Geografia</button>
-    <p id='GeoPre'>
-        Zein da Frantziaren kapitala?
-        <input type="text" id="GeoEra" name="GeoEra">
-        <button id="EraG">Erantzun</button>
-    </p>
-
-    <button id="AP" type="button" onclick="openCity(event, 'ArtPre')">Arte</button>
-    <p id="ArtPre">
-        Nor margoztu zuen Mona Lisa?(Izen osoa)
-        <input type="text" id="ArtEra" name="ArtEra">
-        <button id="EraA">Erantzun</button>
-    </p>
-    <button id="IP" type="button" onclick="document.getElementById('IkuPre')">Ikusikzunak</button>
-    <p id="IkuPre">
-        Zein da minion baten kolorea?
-        <input type="text" id="IkuEra" name="IkuEra">
-        <button id="EraI">Erantzun</button>
-    </p>
-    <button id="HP" type="button" onclick="document.getElementById('HisPre')">Historia</button>
-    <p id="HisPre">
-        Non jaio zen Napoleon Bonaparte?
-        <input type="text" id="HisEra" name="HisEra">
-        <button id="EraH">Erantzun</button>
-    </p>
-    <button id="ZP" type="button" onclick="document.getElementById('ZiePre')">Zientzia</button>
-    <p id="ZiePre">
-        Zer da H2O?
-        <input type="text" id="ZieEra" name="ZieEra">
-        <button id="EraZ">Erantzun</button>
-    </p>
-    <button id="KP" type="button" onclick="document.getElementById('KirPre')">Kirolak</button>
-    <p id="KirPre">
-        Zein da Leo Messik jolasten duen kirola?
-        <input type="text" id="KirEra" name="KirEra">
-        <button id="EraK">Erantzun</button>
-    </p>
-</body>
-</html>
