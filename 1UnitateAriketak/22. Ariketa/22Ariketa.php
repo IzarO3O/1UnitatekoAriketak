@@ -1,7 +1,10 @@
 <?php
-$letrak=array("a"=>("Amanda"), "b"=>("Bea"), "c"=>("Cady"), "d"=>("Dani"), "e"=>("Elena"), "f"=>("Fede"));
-var_dump($letrak);
-
+$z=8;
+function a($x){
+    global $z;
+    $sum=$z+$x;
+    return $sum;
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,6 +14,8 @@ var_dump($letrak);
     <title>Document</title>
 </head>
 <body>
-    
+    <?php
+    echo a(1);
+    ?>
 </body>
 </html>

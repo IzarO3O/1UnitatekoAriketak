@@ -1,7 +1,8 @@
 <?php
-$letrak=array("a"=>("Amanda"), "b"=>("Bea"), "c"=>("Cady"), "d"=>("Dani"), "e"=>("Elena"), "f"=>("Fede"));
-var_dump($letrak);
-
+function media($x, $y){
+    $z=($x+$y)/2;
+    return $z;
+};
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,6 +12,8 @@ var_dump($letrak);
     <title>Document</title>
 </head>
 <body>
-    
+    <?php
+    echo "".media(3,9);
+    ?>
 </body>
 </html>

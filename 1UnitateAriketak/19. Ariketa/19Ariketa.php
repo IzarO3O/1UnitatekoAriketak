@@ -3,7 +3,7 @@ $hiri=array("alemania", "brasil", "italia", "txile", "uruguay", "australia");
 unset($hiri[0]);
 unset($hiri[2]);
 unset($hiri[5]);
-$hiri=array_values($hiri);
+$hiri=array_values(array: $hiri);
 
 array_push($hiri,"argentina");
 array_push($hiri,"bolivia");

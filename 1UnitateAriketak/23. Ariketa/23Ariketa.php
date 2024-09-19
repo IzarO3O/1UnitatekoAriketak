@@ -1,7 +1,8 @@
 <?php
-$letrak=array("a"=>("Amanda"), "b"=>("Bea"), "c"=>("Cady"), "d"=>("Dani"), "e"=>("Elena"), "f"=>("Fede"));
-var_dump($letrak);
-
+function BEZ($x){
+    $e=$x*1.21;
+    return $e;
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,6 +12,8 @@ var_dump($letrak);
     <title>Document</title>
 </head>
 <body>
-    
+    <?php
+    echo BEZ(5);
+    ?>
 </body>
 </html>

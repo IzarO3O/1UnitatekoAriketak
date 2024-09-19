@@ -1,7 +1,9 @@
 <?php
-$letrak=array("a"=>("Amanda"), "b"=>("Bea"), "c"=>("Cady"), "d"=>("Dani"), "e"=>("Elena"), "f"=>("Fede"));
-var_dump($letrak);
-
+function a(){
+    static $a;
+    $a++;
+    return $a;
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,6 +13,11 @@ var_dump($letrak);
     <title>Document</title>
 </head>
 <body>
-    
+    <?php
+    a();
+    a();
+    a();
+    echo "".a();
+    ?>
 </body>
 </html>

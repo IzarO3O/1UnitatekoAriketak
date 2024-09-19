@@ -5,6 +5,7 @@ for ($i = 0; $i < count($array); $i++){
 $z= $array[$i]+$z;
 }
 echo"<p> ".$z." </p>";
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
