@@ -1,0 +1,28 @@
+.container{
+    display: grid;
+    grid-template-areas: 'gorria gorria gorria gorria gorria urdina urdina '
+    'morea morea marroia marroia marroia urdina urdina '
+    'berdea berdea marroia marroia marroia beltza beltza'
+    '';
+
+}
+
+.gorria{
+    grid-area: gorria;
+    background-color: red;
+}
+.morea{
+
+}
+.berdea{
+
+}
+.horia{
+
+}
+.laranja{
+
+}
+.beltza{
+
+}
