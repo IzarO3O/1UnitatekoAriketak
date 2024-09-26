@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            background-color: dimgray;
+            border-width: medium;
+            border-style: solid;
+            border-color: red;
+            border-radius: 10px;
+        }
+        nav{
+            background-color: dimgray;
+            border-color: red;
+            border-style: solid;
+            border-radius: 10px;
+        }
+        aside {
+            width: 20%;
+            background-color:grey;
+            border-color: red;
+            border-style: solid;
+            border-radius: 10px;
+        }
+        .A1{
+            border-color: red;
+            border-style: solid;
+            border-radius: 10px;
+            flex-grow: 1;
+        }
+        .A2{
+            background-color: yellow;
+            border-color: red;
+            border-style: solid;
+            border-radius: 10px;
+            flex-grow: 1;
+        }
+        footer {
+            background-color: purple;
+            border-color: red;
+            border-style: solid;
+            border-radius: 10px;
+        }
+        section{
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        section aside{
+            order: -1;
+        }
+    </style>
+</head>
+<body>
+    <header><h2>Goiburua</h2></header>
+    <nav><p>Nabigatzegunea</p></nav>
+    <main>
+        <section>
+            <article class="A1">
+            <p>Arikulu 1</p>
+        </article>
+        <article class="A2">
+            <p>Artikulu 2</p>
+        </article>
+        <aside>
+            <p>Aside</p>
+        </aside> 
+        </section>
+       
+    </main>
+    <footer>
+        <p>Orri-oina</p>
+    </footer>
+</body>
+</html>
